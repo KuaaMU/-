@@ -1,0 +1,349 @@
+{
+  "name": "project",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "cmsis",
+        "files": [
+          {
+            "path": "../../library/CMSIS/GD/GD32F4xx/Source/system_gd32f4xx.c"
+          },
+          {
+            "path": "../../library/CMSIS/GD/GD32F4xx/Source/ARM/startup_gd32f407_427.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "library",
+        "files": [
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_rcu.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_usart.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_misc.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_adc.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_gpio.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_exti.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_syscfg.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_i2c.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_spi.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_timer.c"
+          },
+          {
+            "path": "../../library/GD32F4xx_standard_peripheral/Source/gd32f4xx_dma.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "board",
+        "files": [
+          {
+            "path": "../../board/src/systick.c"
+          },
+          {
+            "path": "../../board/src/board_uart.c"
+          },
+          {
+            "path": "../../board/src/board.c"
+          },
+          {
+            "path": "../../board/src/gd32f4xx_it.c"
+          },
+          {
+            "path": "../../board/src/board_led.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "bsp",
+        "files": [
+          {
+            "path": "../../bsp/src/bsp_adc.c"
+          },
+          {
+            "path": "../../bsp/src/bsp_basic_timer.c"
+          },
+          {
+            "path": "../../bsp/src/bsp_led.c"
+          },
+          {
+            "path": "../../bsp/src/bsp_pwm.c"
+          },
+          {
+            "path": "../../bsp/src/bsp_usart.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "module",
+        "files": [
+          {
+            "path": "../../module/src/dht11.c"
+          },
+          {
+            "path": "../../module/src/relay.c"
+          },
+          {
+            "path": "../../module/src/ws2812.c"
+          },
+          {
+            "path": "../../module/src/flame.c"
+          },
+          {
+            "path": "../../module/src/ky037.c"
+          },
+          {
+            "path": "../../module/src/mq2.c"
+          },
+          {
+            "path": "../../module/src/hx1838.c"
+          },
+          {
+            "path": "../../module/src/fpm383.c"
+          },
+          {
+            "path": "../../module/src/su03t.c"
+          },
+          {
+            "path": "../../module/src/esp8266.c"
+          },
+          {
+            "path": "../../module/src/dwin.c"
+          },
+          {
+            "path": "../../module/src/motor.c"
+          },
+          {
+            "path": "../../module/src/temt6000.c"
+          },
+          {
+            "path": "../../module/src/bmp180.c"
+          },
+          {
+            "path": "../../module/src/rc522.c"
+          },
+          {
+            "path": "../../module/src/sr602.c"
+          },
+          {
+            "path": "../../module/src/beep.c"
+          },
+          {
+            "path": "../../module/src/tc1508.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "app",
+        "files": [
+          {
+            "path": "../../app/src/main.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "GD32F407ZK",
+  "packDir": ".pack/GigaDevice/GD32F4xx_DFP.2.0.0",
+  "miscInfo": {
+    "uid": "bd1b8b6cb347fc4684e0fe4ba80d31ad"
+  },
+  "targets": {
+    "SmartHome": {
+      "excludeList": [
+        "<virtual_root>/bsp/bsp_hmi.c",
+        "<virtual_root>/app/demo.c"
+      ],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x10000000",
+                "size": "0x10000"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x300000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "STLink",
+      "uploadConfig": {
+        "bin": "",
+        "proType": "SWD",
+        "resetMode": "default",
+        "runAfterProgram": true,
+        "speed": 4000,
+        "address": "0x8000000",
+        "elFile": "None",
+        "optionBytes": ".eide/smarthome.st.option.bytes.ini",
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".",
+          "../../library/GD32F4xx_standard_peripheral/Include",
+          "../../library/CMSIS/GD/GD32F4xx/Include",
+          "../../library/CMSIS",
+          "../../board/inc",
+          "../../bsp/inc",
+          "../../module/inc",
+          "../../app/inc",
+          ".cmsis/include",
+          "../keil5/RTE/_SmartHome"
+        ],
+        "libList": [],
+        "defineList": [
+          "GD32F407",
+          "GD32F427",
+          "GD32F4XX"
+        ]
+      }
+    }
+  },
+  "version": "3.4"
+}
